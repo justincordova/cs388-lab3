@@ -12,7 +12,7 @@ An Android application that displays national parks data from the National Parks
 
 ## Demo
 
-![Lab 3 Demo](lab3.gif)
+<img src="lab3.gif" alt="Lab 3 Demo" width="600">
 
 ## Technical Details
 
