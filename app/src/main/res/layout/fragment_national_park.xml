@@ -36,7 +36,13 @@
         app:layout_constraintTop_toBottomOf="@+id/park_name"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- TODO: Add park image -->
-    <!-- TODO: Add location or other details -->
+    <TextView
+        android:id="@+id/park_location"
+        android:text="Park Location"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/park_description"
+        app:layout_constraintStart_toEndOf="@+id/park_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
