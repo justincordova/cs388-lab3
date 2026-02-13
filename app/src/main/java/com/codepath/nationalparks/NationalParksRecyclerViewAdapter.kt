@@ -45,6 +45,7 @@ class NationalParksRecyclerViewAdapter(
         // TODO: Step 4b - Bind the park data to the views
         holder.mItem = park
         holder.mParkName.text = park.name
+        holder.mParkLocation.text = park.location
         holder.mParkDescription.text = park.description
 
         // TODO: Step 4c - Use Glide to load the first image
