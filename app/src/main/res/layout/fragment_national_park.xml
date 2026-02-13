@@ -7,6 +7,15 @@
     android:layout_height="wrap_content"
     android:layout_margin="6dp">
 
+    <ImageView
+        android:id="@+id/park_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="Park Image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
     <!-- Park Name -->
     <TextView
         android:id="@+id/park_name"
