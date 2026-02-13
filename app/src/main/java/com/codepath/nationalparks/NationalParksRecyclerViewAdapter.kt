@@ -3,6 +3,7 @@ package com.codepath.nationalparks
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.codepath.nationalparks.R.id
@@ -29,7 +30,9 @@ class NationalParksRecyclerViewAdapter(
 
         // TODO: Step 4a - Add references for remaining views from XML
         val mParkName: TextView = mView.findViewById(id.park_name) as TextView
+        val mParkLocation: TextView = mView.findViewById(id.park_location) as TextView
         val mParkDescription: TextView = mView.findViewById(id.park_description) as TextView
+        val mParkImage: ImageView = mView.findViewById(id.park_image) as ImageView
 
         override fun toString(): String {
             return mParkName.toString() + " '" + mParkDescription.text + "'"
