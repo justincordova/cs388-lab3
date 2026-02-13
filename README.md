@@ -12,7 +12,7 @@ An Android application that displays national parks data from the National Parks
 
 ## Demo
 
-<img src="lab3.gif" alt="Lab 3 Demo" width="600">
+<img src="lab3.gif" alt="Lab 3 Demo" width="300">
 
 ## Technical Details
 
@@ -27,5 +27,3 @@ An Android application that displays national parks data from the National Parks
 - Gson for JSON parsing
 - Glide for image loading
 - Material Design components
-
-
