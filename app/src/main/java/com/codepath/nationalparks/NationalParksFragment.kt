@@ -15,6 +15,7 @@ import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
 import android.util.Log
 import org.json.JSONArray
+import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 
@@ -73,7 +74,14 @@ class NationalParksFragment : Fragment(), OnListFragmentInteractionListener {
                     val dataJSON = json.jsonObject.get("data") as JSONArray
                     val parksRawJSON = dataJSON.toString()
 
-                    val models : List<NationalPark> = mutableListOf()
+                    // Create a Gson instance to help parse the raw JSON
+                    val gson = Gson()
+
+                    // Tell Gson what type we're expecting (a list of NationalPark objects)
+                    val arrayParkType = object : TypeToken<List<NationalPark>>() {}.type
+
+                    // Convert the raw JSON string into a list of actual NationalPark data models
+                    val models: List<NationalPark> = gson.fromJson(parksRawJSON, arrayParkType)
                     recyclerView.adapter = NationalParksRecyclerViewAdapter(models, this@NationalParksFragment)
 
                     Log.d("NationalParksFragment", "response successful")
