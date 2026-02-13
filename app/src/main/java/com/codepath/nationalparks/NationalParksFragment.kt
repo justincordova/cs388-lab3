@@ -22,7 +22,7 @@ import com.google.gson.reflect.TypeToken
 // --------------------------------//
 // CHANGE THIS TO BE YOUR API KEY  //
 // --------------------------------//
-private const val API_KEY = "<YOUR-API-KEY-HERE>"
+private const val API_KEY = "2Z6KnqXr677N66MkWN12KzpotBe1QmZ3V7kOTF9V"
 
 /*
  * The class for the only fragment in the app, which contains the progress bar,
